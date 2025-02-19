@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoverable Sidenav</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Side Navigation Bar */
+        .sidenav {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 60px;
+            height: 100%;
+            background-color: transparent;
+            padding-top: 20px;
+        }
+
+        /* Side Navigation Buttons */
+        .sidenav a {
+            position: relative;
+            left: -50px;
+            width: 60px;
+            height: 50px;
+            margin: 5px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+            border-radius: 5px;
+        }
+
+       
+        .sidenav a:hover {
+            left: 0;
+        }
+
+
+        .green { background-color: green; }
+        .blue { background-color: blue; }
+        .red { background-color: red; }
+        .gray { background-color: gray; }
+
+     
+        .main {
+            margin-left: 80px;
+            padding: 20px;
+            border: 1px solid black;
+            width: 80%;
+            height: 80vh;
+        }
+    </style>
+</head>
+<body>
+
+   
+
+    <div class="main">
+        <h2 style="margin-left:150px ">Hoverable Sidenav Buttons</h2>
+        <p style="margin-left:150px ">Hover over the buttons in the left side navigation to open them.</p>
+
+
+
+        <div class="sidenav">
+            <a href="#" class="green" style="margin-left:150px  "> </a>
+            <a href="#" class="blue"   style="margin-left:150px "> </a>
+            <a href="#" class="red"   style="margin-left:150px "> </a>
+            <a href="#" class="gray"   style="margin-left:150px "> </a>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+    <button><a href="index.html">back to home </a></button>
+</body>
+</html>
